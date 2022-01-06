@@ -86,7 +86,7 @@ async function handleRequest(request) {
   console.log(path)
   if(!path){
 
-    const html= await fetch("https://github.com/SixteenOne/Url-Shorten-Worker/"+config.theme+"/index.html")
+    const html= await fetch("https://sixteenone.github.io/Url-Shorten-Worker/"+config.theme+"/index.html")
     
     return new Response(await html.text(), {
     headers: {
